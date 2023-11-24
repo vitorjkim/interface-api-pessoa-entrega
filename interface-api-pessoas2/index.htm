@@ -23,33 +23,35 @@
 
     <div class="lados">
         <div class="lado1">
-            <div class="input-group">
-                <input class="input" type="text" id="nome" placeholder="nome" name="nome" >
-            </div>
-            <div class="input-group">
-                <input class="input" type="text" id="cpf" placeholder="cpf" name="cpf">
-            </div>
-            <div class="input-group">
-                <input class="input" type="date" id="dataNascimento" name="dataNascimento">
-            </div>
-            <div class="input-group">
-                <input class="input" type="text" id="telefone" placeholder="telefone" name="telefone">
-            </div>
+            <form>
+                <div class="input-group">
+                    <input class="input" type="text" id="nome" placeholder="nome" name="nome" required minlength="3" maxlength="50"> 
+                </div>
+                <div class="input-group">
+                    <input class="input" type="text" id="cpf" placeholder="cpf" name="cpf"required minlength="3" maxlength="50"> 
+                </div>
+                <div class="input-group">
+                    <input class="input" type="date" id="dataNascimento" name="dataNascimento"required minlength="3" maxlength="50"> 
+                </div>
+                <div class="input-group">
+                    <input class="input" type="text" id="telefone" placeholder="telefone" name="telefone" required minlength="3" maxlength="50"> 
+                </div>
         </div>
         <div class="lado2">
-            <div class="input-group">
-                <input class="input" type="text" id="Endereço" placeholder="endereco" name="endereco">
-            </div>
-            <div class="input-group">
-                <input class="input" type="text" id="altura" placeholder="altura" name="altura">
-            </div>
-            <div class="input-group">
-                <input class="input" type="text" id="peso" placeholder="peso" name="peso">
+                <div class="input-group">
+                    <input class="input" type="text" id="Endereço" placeholder="endereco" name="endereco" required minlength="3" maxlength="50"> 
+                </div>
+                <div class="input-group">
+                    <input class="input" type="text" id="altura" placeholder="altura" name="altura" required minlength="3" maxlength="50">
+                </div>
+                <div class="input-group">
+                    <input class="input" type="text" id="peso" placeholder="peso" name="peso" required minlength="3" maxlength="50">    
             </div>
             <button class="button" onclick="cadastrar()">Cadastrar</button>
+        </form>
         </div>
     </div>
 
 </body>
 
-</html>
+</html> 

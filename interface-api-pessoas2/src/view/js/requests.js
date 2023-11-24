@@ -46,3 +46,5 @@ function cadastrar() {
               console.log(data);
           });
   }
+
+  
